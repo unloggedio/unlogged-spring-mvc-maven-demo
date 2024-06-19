@@ -22,4 +22,16 @@ public class MyBatisOpsController {
     public List<Book> getAllArticles() {
         return bookMapper.getAll();
     }
+
+    public int insertBook(Book book) {
+        return bookMapper.insertNewBook(book);
+    }
+
+    public int updateBook(Book book) {
+        return bookMapper.updateBook(book);
+    }
+
+    public int deleteBook(long id) {
+        return bookMapper.deleteById(id);
+    }
 }
