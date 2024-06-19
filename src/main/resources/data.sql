@@ -1,0 +1,6 @@
+INSERT INTO BOOKS
+VALUES (1, 'Book E', 'Mr E');
+INSERT INTO BOOKS
+VALUES (2, 'Book D', 'Mr D');
+INSERT INTO BOOKS
+VALUES (3, 'Book C', 'Mr C');
