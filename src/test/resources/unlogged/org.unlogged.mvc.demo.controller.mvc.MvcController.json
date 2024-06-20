@@ -1,0 +1,46 @@
+{
+  "classname" : "org.unlogged.mvc.demo.controller.mvc.MvcController",
+  "storedCandidateMap" : {
+    "org.unlogged.mvc.demo.controller.mvc.MvcController#loadAllBooks#(Lorg/springframework/ui/Model;)Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 18, 19 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"index\"",
+          "id" : "b02ced1d-7336-4f35-96dd-c689d71b07e8",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "f6d04046-610e-40e0-b0ff-28ba8ec3054e",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "96f56d62-fa26-4660-834b-7ef3b8aada37",
+      "name" : "loadAllBooks - normal",
+      "description" : null,
+      "methodArguments" : [ "1862060430" ],
+      "returnValue" : "\"index\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26737229625042,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 513100957,
+      "probSerializedValue" : "ImluZGV4Ig==",
+      "mockIds" : [ "676ddfe7-1f5f-4463-affa-ea78a61cc22f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "loadAllBooks",
+        "signature" : "(Lorg/springframework/ui/Model;)Ljava/lang/String;",
+        "className" : "org.unlogged.mvc.demo.controller.mvc.MvcController",
+        "methodHash" : 1595287929
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,117 @@
+{
+  "classname" : "org.unlogged.mvc.demo.mapper.BookMapper",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.mvc.demo.mapper.BookMapper#getAll#()Ljava/util/List<Lorg/unlogged/mvc/demo/model/Book;>;" : [ {
+      "id" : "676ddfe7-1f5f-4463-affa-ea78a61cc22f",
+      "name" : "mock response for call to bookMapper.getAll()",
+      "fieldTypeName" : "org.unlogged.mvc.demo.mapper.BookMapper",
+      "sourceClassName" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+      "fieldName" : "bookMapper",
+      "methodName" : "getAll",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":1,\"title\":\"Book E\",\"author\":\"Mr E\"},{\"id\":2,\"title\":\"Book D\",\"author\":\"Mr D\"},{\"id\":3,\"title\":\"Book C\",\"author\":\"Mr C\"}]",
+          "returnValueType" : "REAL",
+          "className" : "java.util.List<org.unlogged.mvc.demo.model.Book>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.mvc.demo.mapper.BookMapper#getAll#()Ljava/util/List<Lorg/unlogged/mvc/demo/model/Book;>;"
+    } ],
+    "org.unlogged.mvc.demo.mapper.BookMapper#getArticle#(Ljava/lang/Long;)Lorg/unlogged/mvc/demo/model/Book;" : [ {
+      "id" : "0d3ea354-e5ad-4fed-b9b8-ba5604615372",
+      "name" : "mock response for call to bookMapper.getArticle(id)",
+      "fieldTypeName" : "org.unlogged.mvc.demo.mapper.BookMapper",
+      "sourceClassName" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+      "fieldName" : "bookMapper",
+      "methodName" : "getArticle",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"title\":\"Book E\",\"author\":\"Mr E\"}",
+          "returnValueType" : "REAL",
+          "className" : "org.unlogged.mvc.demo.model.Book"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.mvc.demo.mapper.BookMapper#getArticle#(Ljava/lang/Long;)Lorg/unlogged/mvc/demo/model/Book;"
+    } ],
+    "org.unlogged.mvc.demo.mapper.BookMapper#insertNewBook#(Lorg/unlogged/mvc/demo/model/Book;)I" : [ {
+      "id" : "29867df7-2898-4046-9970-fc137cbd399f",
+      "name" : "mock response for call to bookMapper.insertNewBook(book)",
+      "fieldTypeName" : "org.unlogged.mvc.demo.mapper.BookMapper",
+      "sourceClassName" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+      "fieldName" : "bookMapper",
+      "methodName" : "insertNewBook",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":0,\"title\":\"string\",\"author\":\"string\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "1",
+          "returnValueType" : "REAL",
+          "className" : "int"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.mvc.demo.mapper.BookMapper#insertNewBook#(Lorg/unlogged/mvc/demo/model/Book;)I"
+    } ],
+    "org.unlogged.mvc.demo.mapper.BookMapper#updateBook#(Lorg/unlogged/mvc/demo/model/Book;)I" : [ {
+      "id" : "a4cb95c4-85b0-4c41-ab0e-f0b11d2f7f0c",
+      "name" : "mock response for call to bookMapper.updateBook(book)",
+      "fieldTypeName" : "org.unlogged.mvc.demo.mapper.BookMapper",
+      "sourceClassName" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+      "fieldName" : "bookMapper",
+      "methodName" : "updateBook",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":0,\"title\":\"string\",\"author\":\"string\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "1",
+          "returnValueType" : "REAL",
+          "className" : "int"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.mvc.demo.mapper.BookMapper#updateBook#(Lorg/unlogged/mvc/demo/model/Book;)I"
+    } ],
+    "org.unlogged.mvc.demo.mapper.BookMapper#deleteById#(Ljava/lang/Long;)I" : [ {
+      "id" : "3adae108-b072-4041-9018-e3ba74061480",
+      "name" : "mock response for call to bookMapper.deleteById(id)",
+      "fieldTypeName" : "org.unlogged.mvc.demo.mapper.BookMapper",
+      "sourceClassName" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+      "fieldName" : "bookMapper",
+      "methodName" : "deleteById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "0"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "1",
+          "returnValueType" : "REAL",
+          "className" : "int"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.mvc.demo.mapper.BookMapper#deleteById#(Ljava/lang/Long;)I"
+    } ]
+  }
+}

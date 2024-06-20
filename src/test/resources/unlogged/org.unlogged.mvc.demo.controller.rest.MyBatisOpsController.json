@@ -1,0 +1,297 @@
+{
+  "classname" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController#getBookById#(J)Lorg/unlogged/mvc/demo/model/Book;" : [ {
+      "lineNumbers" : [ 19 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "9cdaa143-d395-429f-a757-f4e485f0c229",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Book E\"",
+          "id" : "1cf6da97-7efd-45c5-b169-3d2f7d5fc2b0",
+          "assertionType" : "EQUAL",
+          "key" : "/title"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Mr E\"",
+          "id" : "dde4fb72-451c-4d84-a03b-e73dd9e2411d",
+          "assertionType" : "EQUAL",
+          "key" : "/author"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b780060b-d82b-47a1-a9fc-9a950eee2553",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "1ae1c504-8a1b-4a7e-b9c2-651a5c62f86e",
+      "name" : "getBookById - normal",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"id\":1,\"title\":\"Book E\",\"author\":\"Mr E\"}",
+      "returnValueClassname" : "org.unlogged.mvc.demo.model.Book",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26793022324980,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 643870271,
+      "probSerializedValue" : "eyJpZCI6MSwidGl0bGUiOiJCb29rIEUiLCJhdXRob3IiOiJNciBFIn0=",
+      "mockIds" : [ "0d3ea354-e5ad-4fed-b9b8-ba5604615372" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getBookById",
+        "signature" : "(J)Lorg/unlogged/mvc/demo/model/Book;",
+        "className" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController#getAllBooks#()Ljava/util/List<Lorg/unlogged/mvc/demo/model/Book;>;" : [ {
+      "lineNumbers" : [ 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "67f24f23-3730-4cfc-adbc-0403679c2885",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Book E\"",
+            "id" : "8ce17090-9d4e-4997-afaa-930f74c92575",
+            "assertionType" : "EQUAL",
+            "key" : "/0/title"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mr E\"",
+            "id" : "9da862af-62f4-4855-aae6-bb946c25dafe",
+            "assertionType" : "EQUAL",
+            "key" : "/0/author"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "46887293-7738-4975-9246-f08633ef3275",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2",
+            "id" : "44cf2ca2-a122-4671-8480-2034cb419f79",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Book D\"",
+            "id" : "f2c27eae-4a11-41fc-98ca-651b68b0b764",
+            "assertionType" : "EQUAL",
+            "key" : "/1/title"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mr D\"",
+            "id" : "cbb5d450-50c3-4378-9c14-f47d3a38a4f4",
+            "assertionType" : "EQUAL",
+            "key" : "/1/author"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a82e932c-facb-4441-9990-c5c6ed6ea8dc",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "55938714-b99d-4903-af52-e9efa4211c20",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Book C\"",
+            "id" : "ceaf936f-b009-49a0-a749-a04eab5bfb2e",
+            "assertionType" : "EQUAL",
+            "key" : "/2/title"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mr C\"",
+            "id" : "506f44ca-85db-494b-9f50-0eef4315065d",
+            "assertionType" : "EQUAL",
+            "key" : "/2/author"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "67679286-4f26-4213-8890-1c1ca71fac7c",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "5f749d1d-97c9-4da5-be10-bdc4eb50c28d",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "2564bd53-bc51-41f5-96b3-90f048676e0a",
+      "name" : "getAllBooks - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":1,\"title\":\"Book E\",\"author\":\"Mr E\"},{\"id\":2,\"title\":\"Book D\",\"author\":\"Mr D\"},{\"id\":3,\"title\":\"Book C\",\"author\":\"Mr C\"}]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26814618272504,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 998087412,
+      "probSerializedValue" : "W3siaWQiOjEsInRpdGxlIjoiQm9vayBFIiwiYXV0aG9yIjoiTXIgRSJ9LHsiaWQiOjIsInRpdGxlIjoiQm9vayBEIiwiYXV0aG9yIjoiTXIgRCJ9LHsiaWQiOjMsInRpdGxlIjoiQm9vayBDIiwiYXV0aG9yIjoiTXIgQyJ9XQ==",
+      "mockIds" : [ "676ddfe7-1f5f-4463-affa-ea78a61cc22f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllBooks",
+        "signature" : "()Ljava/util/List<Lorg/unlogged/mvc/demo/model/Book;>;",
+        "className" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController#insertBook#(Lorg/unlogged/mvc/demo/model/Book;)I" : [ {
+      "lineNumbers" : [ 27 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "fcf5e22b-65ae-48e9-b7a5-f69d1a9fe5e3",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b206d9ae-c82c-49ee-9132-cde45cf465ec",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "0833823f-bfae-4e18-9bc6-456f698ebbb5",
+      "name" : "insertBook - normal",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":0,\"title\":\"string\",\"author\":\"string\"}" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26851406427295,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1736331645,
+      "probSerializedValue" : "",
+      "mockIds" : [ "29867df7-2898-4046-9970-fc137cbd399f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "insertBook",
+        "signature" : "(Lorg/unlogged/mvc/demo/model/Book;)I",
+        "className" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController#updateBook#(Lorg/unlogged/mvc/demo/model/Book;)I" : [ {
+      "lineNumbers" : [ 31 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "ba1c857d-6ea2-40fa-8e0c-3ee0212f4584",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "659884a9-423f-457c-b645-b23178159924",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "633b99aa-90a0-4d49-95b2-9f14a71e985b",
+      "name" : "updateBook - normal",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":0,\"title\":\"string\",\"author\":\"string\"}" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26875697631701,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1298427101,
+      "probSerializedValue" : "",
+      "mockIds" : [ "a4cb95c4-85b0-4c41-ab0e-f0b11d2f7f0c" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateBook",
+        "signature" : "(Lorg/unlogged/mvc/demo/model/Book;)I",
+        "className" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController#deleteBook#(J)I" : [ {
+      "lineNumbers" : [ 35 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "aacab874-3a0b-42f9-bc57-ee836010b42f",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "6ab3a886-218b-4a47-9e59-6b4bac2e4a4f",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "24466d88-1cbf-4e6d-866e-19b367b9e762",
+      "name" : "deleteBook - normal",
+      "description" : null,
+      "methodArguments" : [ "0" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 26905069691580,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 444685620,
+      "probSerializedValue" : "",
+      "mockIds" : [ "3adae108-b072-4041-9018-e3ba74061480" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deleteBook",
+        "signature" : "(J)I",
+        "className" : "org.unlogged.mvc.demo.controller.rest.MyBatisOpsController",
+        "methodHash" : 243416670
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

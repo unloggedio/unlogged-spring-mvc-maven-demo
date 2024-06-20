@@ -15,11 +15,11 @@ public class MyBatisOpsController {
     @Autowired
     private BookMapper bookMapper;
 
-    public Book getArticleById(long id) {
+    public Book getBookById(long id) {
         return bookMapper.getArticle(id);
     }
 
-    public List<Book> getAllArticles() {
+    public List<Book> getAllBooks() {
         return bookMapper.getAll();
     }
 
