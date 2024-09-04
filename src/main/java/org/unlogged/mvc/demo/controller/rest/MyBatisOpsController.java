@@ -1,10 +1,12 @@
 package org.unlogged.mvc.demo.controller.rest;
 
+import io.unlogged.UnloggedMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.mvc.demo.mapper.BookMapper;
 import org.unlogged.mvc.demo.model.Book;
+import org.unlogged.mvc.demo.service.BookRestService;
 
 import java.util.List;
 
@@ -13,25 +15,28 @@ import java.util.List;
 public class MyBatisOpsController {
 
     @Autowired
-    private BookMapper bookMapper;
+    private BookRestService bookRestService;
 
     public Book getBookById(long id) {
-        return bookMapper.getArticle(id);
+        return bookRestService.getArticleById(id);
     }
 
+    @UnloggedMethod(counter = "1")
+    @RequestMapping("/getall")
     public List<Book> getAllBooks() {
-        return bookMapper.getAll();
+        System.out.println("GetAll invoked");
+        return bookRestService.getAll();
     }
 
     public int insertBook(Book book) {
-        return bookMapper.insertNewBook(book);
+        return bookRestService.insertNewBook(book);
     }
 
     public int updateBook(Book book) {
-        return bookMapper.updateBook(book);
+        return bookRestService.updateBook(book);
     }
 
     public int deleteBook(long id) {
-        return bookMapper.deleteById(id);
+        return bookRestService.deleteById(id);
     }
 }
